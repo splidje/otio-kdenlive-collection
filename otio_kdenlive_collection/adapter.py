@@ -45,7 +45,7 @@ def write_to_string(input_otio):
 
 def _replace_stacks(timeline):
     for stack in timeline.each_child(
-        descended_from_type=otio.schema.Stack
+            descended_from_type=otio.schema.Stack
     ):
         track = stack.parent()
         clip = otio.schema.Clip(
